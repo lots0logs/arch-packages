@@ -5,8 +5,8 @@
 
 pkgbase=kate
 pkgname=(kwrite kate)
-pkgver=19.08.0
-pkgrel=2
+pkgver=19.08.1
+pkgrel=1
 arch=(x86_64)
 license=(GPL LGPL FDL)
 makedepends=(extra-cmake-modules kdoctools plasma-framework knewstuff kitemmodels ktexteditor threadweaver kactivities)
@@ -14,7 +14,7 @@ source=(
 	"https://download.kde.org/stable/applications/$pkgver/src/$pkgbase-$pkgver.tar.xz"
 	0001-Defuse-root-block.patch
 )
-sha256sums=('6acc3172429191ab47722d788f324292ea5ee2f1e419d48c72200579b9b30878'
+sha256sums=('5389e1620a7eb8d7bab7396ee0db1a886fbdd44c8415291db6a917e89dcc77b7'
             'eca0530d0b697a4b454af826f93594bae48c16020e2e9aaecf2adb707963cac8')
 #validpgpkeys=(CA262C6C83DE4D2FB28A332A3A6A4DB839EAA6D7  # Albert Astals Cid <aacid@kde.org>
 #              F23275E4BF10AFC1DF6914A6DBD2CE893E2D1C87) # Christoph Feck <cfeck@kde.org>
