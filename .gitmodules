@@ -1,0 +1,6 @@
+[submodule "pamac/src"]
+	path = pamac/src
+	url = ssh://git@gitlab.manjaro.org:22277/packages/extra/pamac.git
+[submodule "pamac/aur"]
+	path = pamac/aur
+	url = ssh://aur@aur.archlinux.org/pamac.git
