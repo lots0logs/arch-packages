@@ -7,3 +7,6 @@
 [submodule "ttf-google-fonts-typewolf"]
 	path = ttf-google-fonts-typewolf
 	url = ssh://aur@aur.archlinux.org/ttf-google-fonts-typewolf.git
+[submodule "yup"]
+	path = yup
+	url = https://aur.archlinux.org/yup.git
