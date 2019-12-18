@@ -5,7 +5,7 @@
 
 pkgbase=kate
 pkgname=(kwrite kate)
-pkgver=19.08.1
+pkgver=19.08.3
 pkgrel=1
 arch=(x86_64)
 license=(GPL LGPL FDL)
@@ -13,6 +13,7 @@ makedepends=(extra-cmake-modules kdoctools plasma-framework knewstuff kitemmodel
 source=(
 	"https://download.kde.org/stable/applications/$pkgver/src/$pkgbase-$pkgver.tar.xz"
 	0001-Defuse-root-block.patch
+	D19190-fix-scroll-with-large-icons.patch
 )
 sha256sums=('5389e1620a7eb8d7bab7396ee0db1a886fbdd44c8415291db6a917e89dcc77b7'
             'eca0530d0b697a4b454af826f93594bae48c16020e2e9aaecf2adb707963cac8')
@@ -22,6 +23,7 @@ sha256sums=('5389e1620a7eb8d7bab7396ee0db1a886fbdd44c8415291db6a917e89dcc77b7'
 prepare() {
   mkdir -p build
   (cd ${srcdir}/${pkgbase}-${pkgver} && patch -Np1 -i ../0001-*.patch)
+  (cd ${srcdir}/${pkgname}-${pkgver} && patch -Np1 -i ../D19190-fix-scroll-with-large-icons.patch)
 }
 
 build() {
