@@ -10,3 +10,6 @@
 [submodule "yup"]
 	path = yup
 	url = https://aur.archlinux.org/yup.git
+[submodule "wavebox"]
+	path = wavebox
+	url = ssh://aur@aur.archlinux.org/wavebox.git
